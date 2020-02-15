@@ -5,7 +5,13 @@ pipeline {
       label 'master'
     }
   }
+pipeline {
 
+  agent {
+    node {
+      label 'develop'
+    }
+}
 
 
   stages {
